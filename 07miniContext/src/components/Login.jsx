@@ -18,12 +18,13 @@ function Login() {
         <input 
         type="text" 
         value={username} 
-        onChange={(e) => e.setUsername(e.target.value)} 
+        onChange={(e) => setUsername(e.target.value)} 
         placeholder='username' />
+        {"   "}
         <input 
         type="text" 
         value={password} 
-        onChange={(e) => e.setPassword(e.target.value)} 
+        onChange={(e) => setPassword(e.target.value)} 
         placeholder='password' />
         <button onClick={handleSubmit}>Submit</button>
     </div>

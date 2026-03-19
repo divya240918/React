@@ -4,12 +4,15 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 import UserContextProvider from './context/UserContextProvider'
+import Login from './components/Login'
+import Profile from './components/Profile'
 
 function App() {
-
   return (
     <UserContextProvider>
       <h1>Hello Divya</h1>
+      <Login />
+      <Profile />
     </UserContextProvider>
   )
 }
