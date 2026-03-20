@@ -9,7 +9,8 @@ import Profile from './components/Profile'
 
 function App() {
   return (
-    <UserContextProvider>
+    <UserContextProvider> 
+      //children
       <h1>Hello Divya</h1>
       <Login />
       <Profile />

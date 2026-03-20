@@ -1,5 +1,5 @@
 import React from 'react'
 
-const UserContext = React.createContext()
+const UserContext = React.createContext() //creates global storage
 
-export default UserContext;
+export default UserContext; //imports global storage
