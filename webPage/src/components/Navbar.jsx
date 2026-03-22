@@ -10,7 +10,7 @@ export class Navbar extends Component {
             <ul className='flex gap-10 justify-between font-semibold '>
                 <li>
                     <NavLink
-                    to="/"
+                    to="/body"
                     className={({isActive}) => isActive ? "text-[#caf0f8]" : ""}
                     >
                     Home
