@@ -5,13 +5,13 @@ export class Navbar extends Component {
   render() {
     return (
       <div >
-        <div className='bg-blue-400 h-20 flex items-center justify-between p-5'>
+        <div className='bg-[#03045e] text-white h-20 flex items-center justify-between p-5'>
             <h3 className='text-xl font-bold text-white'>Gratitude</h3>
             <ul className='flex gap-10 justify-between font-semibold '>
                 <li>
                     <NavLink
                     to="/"
-                    className={({isActive}) => isActive ? "text-red-500" : ""}
+                    className={({isActive}) => isActive ? "text-[#caf0f8]" : ""}
                     >
                     Home
                     </NavLink>
@@ -19,7 +19,7 @@ export class Navbar extends Component {
                 <li>
                     <NavLink
                     to="/about"
-                    className={({isActive}) => isActive ? "text-red-500" : ""}
+                    className={({isActive}) => isActive ? "text-[#caf0f8]" : ""}
                     >
                     About
                     </NavLink>
@@ -27,13 +27,13 @@ export class Navbar extends Component {
                 <li>
                     <NavLink
                     to="/contact"
-                    className={({isActive}) => isActive ? "text-red-500" : ""}
+                    className={({isActive}) => isActive ? "text-[#caf0f8]" : ""}
                     >
                     Contact
                     </NavLink>
                 </li>
             </ul>
-            <button className='text-bold text-white bg-red-400 p-1 w-20 rounded-lg' >Login</button>
+            <button className='font-bold text-sm text-[#03045e] bg-[#caf0f8] p-1 w-20 rounded-lg' >Login</button>
         </div>
       </div>
     )
