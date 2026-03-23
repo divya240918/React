@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {NavLink} from 'react-router-dom'
+import {NavLink, Link} from 'react-router-dom'
 
 export class Navbar extends Component {
   render() {
@@ -33,7 +33,9 @@ export class Navbar extends Component {
                     </NavLink>
                 </li>
             </ul>
-            <button className='font-bold text-sm text-[#03045e] bg-[#caf0f8] p-1 w-20 rounded-lg' >Login</button>
+            <Link to="/login">
+              <button className='font-bold text-sm text-[#03045e] bg-[#caf0f8] p-1 w-20 rounded-lg' >Login</button>
+            </Link>
         </div>
       </div>
     )
