@@ -32,6 +32,14 @@ export class Navbar extends Component {
                     Contact
                     </NavLink>
                 </li>
+                <li>
+                    <NavLink
+                    to="/cart"
+                    className={({isActive}) => isActive ? "text-[#caf0f8]" : ""}
+                    >
+                    Cart
+                    </NavLink>
+                </li>
             </ul>
             <Link to="/login">
               <button className='font-bold text-sm text-[#03045e] bg-[#caf0f8] p-1 w-20 rounded-lg' >Login</button>
