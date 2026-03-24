@@ -1,6 +1,12 @@
 import React from 'react'
+import {useContext} from 'react';
+import {CartContext} from '../contexts/CartContext'
 
 function Body() {
+  const {cart, addToCart} = useContext(CartContext);
+  console.log(cart);
+  
+  
   return (
     <>
       <div className='m-2 bg-[#caf0f8] min-h-200'>
@@ -8,10 +14,12 @@ function Body() {
           <div className='bg-[#03045e] h-60 w-60 rounded-xl shadow-xl flex flex-col items-center justify-center'>
             <img
               className='h-40 m-5 rounded-lg shadow-md '
-              src="./public/gelpen.png" alt="" />
+              src="/gelpen.png" alt="" />
             <div className=' font-semibold flex gap-12 mb-2'>
               <h4 className='text-white'>Gel Pen</h4>
-              <button className='bg-[#caf0f8] w-10 rounded-md shadow-md text-sm  text-[#03045e]'>Add</button>
+              <button 
+              onClick={() => addToCart({name:"Gel Pen", price: 100})}
+              className='bg-[#caf0f8] w-10 rounded-md shadow-md text-sm  text-[#03045e]'>Add</button>
             </div>
           </div>
           <div className='bg-[#03045e] h-60 w-60 rounded-xl shadow-xl flex flex-col items-center justify-center'>
