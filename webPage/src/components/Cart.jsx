@@ -5,14 +5,21 @@ import { useNavigate } from 'react-router-dom';
 
 function Cart() {
     const { cart } = useContext(CartContext);
-
-
     const navigate = useNavigate();
 
+    
 
     return (
         <>
-            <h2 className='text-2xl font-bold text-center'>Cart</h2>
+            <div className='flex p-1 gap-[280px]'>
+                <button
+                    className='font-bold bg-blue-500 text-white px-4 py-2 rounded'
+                    onClick={() => navigate(-1)}>Back
+                </button>
+                <h2 className='text-2xl font-bold text-center'>Cart</h2>
+
+                
+            </div>
             <div className='flex flex-col gap-5 mt-3 mb-5'>
                 {cart.length === 0 ? (
                     <p className='text-center'>Cart is Empty</p>
@@ -24,10 +31,6 @@ function Cart() {
                     ))
                 )}
             </div>
-
-            <button 
-            className='font-bold bg-blue-500 text-white px-4 py-2 rounded' 
-            onClick={() => navigate(-1)}>Back</button>
 
         </>
     )
