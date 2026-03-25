@@ -10,6 +10,7 @@ import Contact from './components/Contact.jsx'
 import Layout from './Layout.jsx'
 import Login from './components/Login.jsx'
 import Cart from './components/Cart.jsx'
+import SignUp from './components/SignUp.jsx'
 import { createBrowserRouter, Route, createRoutesFromElements, RouterProvider } from 'react-router-dom'
 import { CartProvider } from './contexts/CartContext.jsx'
 
@@ -20,6 +21,7 @@ const router = createBrowserRouter(
       <Route path='about' element={<About />} />
       <Route path='contact' element={<Contact />} />
       <Route path='login' element={<Login />} />
+      <Route path='login/register' element={<SignUp />} />
       <Route path='cart' element={<Cart />} />
     </Route>
   )

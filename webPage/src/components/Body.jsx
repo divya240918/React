@@ -22,7 +22,7 @@ function Body() {
   return (
     <>
     {message && (
-      <div className='fixed bottom-5 left-[340px] text-center bg-slate-500 text-black px-4 py-2 rounded-lg shadow-md'>
+      <div className='fixed bottom-5 left-[340px] text-center bg-slate-300 text-black px-4 py-2 rounded-lg shadow-md'>
         {message}
       </div>
     )}
